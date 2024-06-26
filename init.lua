@@ -1,0 +1,2 @@
+require("aadinvm")
+print("hello")
