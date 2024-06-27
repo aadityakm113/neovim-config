@@ -1,6 +1,9 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
+
+vim.o.relativenumber = true
+vim.o.number = true
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -12,5 +15,6 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use { 'ThePrimeagen/vim-be-good' }
 
 end)
